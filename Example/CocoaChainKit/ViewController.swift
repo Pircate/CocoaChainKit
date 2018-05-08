@@ -11,37 +11,31 @@ import CocoaChainKit
 
 class ViewController: UIViewController {
     
-    private lazy var loginButton: UIButton = {
-        return UIButton().chain
+    private lazy var button: UIButton = {
+        UIButton().chain
             .frame(x: 0, y: 0, width: 120, height: 30)
             .center(view.center)
             .backgroundColor(UIColor.red)
-            .boldSystemFont(ofSize: 30)
+            .systemFont(ofSize: 14)
             .title("Hello World", for: .normal)
             .titleColor(UIColor.blue, for: .normal)
+            .cornerRadius(15)
+            .masksToBounds(true)
             .addTarget(self, action: #selector(buttonAction), for: .touchUpInside)
-            .end
+            .installed
     }()
     
     private lazy var tableView: UITableView = {
-        return UITableView(frame: CGRect.zero, style: .plain).chain.rowHeight(20).end
+        return UITableView(frame: CGRect.zero, style: .plain).chain
+            .rowHeight(44)
+            .register(UITableViewCell.self, forCellReuseIdentifier: "cellID")
+            .installed
     }()
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
-        view.addSubview(loginButton)
         
-//        let button = UIButton(type: .custom)
-        
-//        button.chain
-//            .frame(CGRect(x: 0, y: 0, width: 120, height: 30))
-//            .center(view.center)
-//            .backgroundColor(UIColor.red)
-//            .title("Hello World", for: .normal)
-//            .addTarget(self, action: #selector(buttonAction), for: .touchUpInside)
-//
-//        view.addSubview(button)
+        view.addSubview(button)
     }
 
     override func didReceiveMemoryWarning() {
@@ -50,7 +44,7 @@ class ViewController: UIViewController {
     }
 
     @objc private func buttonAction() {
-        debugPrint("+++++")
+        debugPrint("Hello World")
     }
 }
 

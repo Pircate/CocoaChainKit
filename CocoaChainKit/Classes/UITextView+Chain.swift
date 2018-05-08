@@ -48,4 +48,28 @@ public extension Chain where Base: UITextView {
         base.isSelectable = isSelectable
         return self
     }
+    
+    @discardableResult
+    func dataDetectorTypes(_ dataDetectorTypes: UIDataDetectorTypes) -> Chain {
+        base.dataDetectorTypes = dataDetectorTypes
+        return self
+    }
+    
+    @discardableResult
+    func allowsEditingTextAttributes(_ allowsEditingTextAttributes: Bool) -> Chain {
+        base.allowsEditingTextAttributes = allowsEditingTextAttributes
+        return self
+    }
+    
+    @discardableResult
+    func keyboardType(_ keyboardType: UIKeyboardType) -> Chain {
+        base.keyboardType = keyboardType
+        return self
+    }
+    
+    @discardableResult
+    func returnKeyType(_ returnKeyType: UIReturnKeyType) -> Chain {
+        base.returnKeyType = returnKeyType
+        return self
+    }
 }

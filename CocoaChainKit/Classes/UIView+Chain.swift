@@ -9,10 +9,6 @@ extension UIView: ChainCompatible {}
 
 public extension Chain where Base: UIView {
     
-    var end: Base {
-        return base
-    }
-    
     @discardableResult
     func frame(_ frame: CGRect) -> Chain {
         base.frame = frame
@@ -34,6 +30,12 @@ public extension Chain where Base: UIView {
     @discardableResult
     func center(_ center: CGPoint) -> Chain {
         base.center = center
+        return self
+    }
+    
+    @discardableResult
+    func center(x: CGFloat, y: CGFloat) -> Chain {
+        base.center = CGPoint(x: x, y: y)
         return self
     }
     

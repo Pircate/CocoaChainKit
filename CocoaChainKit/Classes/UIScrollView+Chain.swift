@@ -14,14 +14,32 @@ public extension Chain where Base: UIScrollView {
     }
     
     @discardableResult
+    func contentOffset(x: CGFloat, y: CGFloat) -> Chain {
+        base.contentOffset = CGPoint(x: x, y: y)
+        return self
+    }
+    
+    @discardableResult
     func contentSize(_ contentSize: CGSize) -> Chain {
         base.contentSize = contentSize
         return self
     }
     
     @discardableResult
+    func contentSize(width: CGFloat, height: CGFloat) -> Chain {
+        base.contentSize = CGSize(width: width, height: height)
+        return self
+    }
+    
+    @discardableResult
     func contentInset(_ contentInset: UIEdgeInsets) -> Chain {
         base.contentInset = contentInset
+        return self
+    }
+    
+    @discardableResult
+    func contentInset(top: CGFloat, left: CGFloat, bottom: CGFloat, right: CGFloat) -> Chain {
+        base.contentInset = UIEdgeInsets(top: top, left: left, bottom: bottom, right: right)
         return self
     }
     

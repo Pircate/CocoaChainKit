@@ -44,8 +44,20 @@ public extension Chain where Base: UIButton {
     }
     
     @discardableResult
+    func titleEdgeInsets(top: CGFloat, left: CGFloat, bottom: CGFloat, right: CGFloat) -> Chain {
+        base.titleEdgeInsets = UIEdgeInsets(top: top, left: left, bottom: bottom, right: right)
+        return self
+    }
+    
+    @discardableResult
     func imageEdgeInsets(_ edgeInsets: UIEdgeInsets) -> Chain {
         base.imageEdgeInsets = edgeInsets
+        return self
+    }
+    
+    @discardableResult
+    func imageEdgeInsets(top: CGFloat, left: CGFloat, bottom: CGFloat, right: CGFloat) -> Chain {
+        base.imageEdgeInsets = UIEdgeInsets(top: top, left: left, bottom: bottom, right: right)
         return self
     }
     

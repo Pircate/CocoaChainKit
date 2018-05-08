@@ -48,4 +48,58 @@ public extension Chain where Base: UITextField {
         base.attributedPlaceholder = attributedPlaceholder
         return self
     }
+    
+    @discardableResult
+    func borderStyle(_ borderStyle: UITextBorderStyle) -> Chain {
+        base.borderStyle = borderStyle
+        return self
+    }
+    
+    @discardableResult
+    func defaultTextAttributes(_ defaultTextAttributes: [String: Any]) -> Chain {
+        base.defaultTextAttributes = defaultTextAttributes
+        return self
+    }
+    
+    @discardableResult
+    func clearsOnBeginEditing(_ clearsOnBeginEditing: Bool) -> Chain {
+        base.clearsOnBeginEditing = clearsOnBeginEditing
+        return self
+    }
+    
+    @discardableResult
+    func adjustsFontSizeToFitWidth(_ adjustsFontSizeToFitWidth: Bool) -> Chain {
+        base.adjustsFontSizeToFitWidth = adjustsFontSizeToFitWidth
+        return self
+    }
+    
+    @discardableResult
+    func minimumFontSize(_ minimumFontSize: CGFloat) -> Chain {
+        base.minimumFontSize = minimumFontSize
+        return self
+    }
+    
+    @discardableResult
+    func allowsEditingTextAttributes(_ allowsEditingTextAttributes: Bool) -> Chain {
+        base.allowsEditingTextAttributes = allowsEditingTextAttributes
+        return self
+    }
+    
+    @discardableResult
+    func clearButtonMode(_ clearButtonMode: UITextFieldViewMode) -> Chain {
+        base.clearButtonMode = clearButtonMode
+        return self
+    }
+    
+    @discardableResult
+    func keyboardType(_ keyboardType: UIKeyboardType) -> Chain {
+        base.keyboardType = keyboardType
+        return self
+    }
+    
+    @discardableResult
+    func returnKeyType(_ returnKeyType: UIReturnKeyType) -> Chain {
+        base.returnKeyType = returnKeyType
+        return self
+    }
 }

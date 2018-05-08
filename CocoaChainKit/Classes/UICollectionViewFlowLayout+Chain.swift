@@ -5,6 +5,8 @@
 //  Created by GorXion on 2018/5/8.
 //
 
+extension UICollectionViewFlowLayout: ChainCompatible {}
+
 public extension Chain where Base: UICollectionViewFlowLayout {
     
     @discardableResult
@@ -26,8 +28,20 @@ public extension Chain where Base: UICollectionViewFlowLayout {
     }
     
     @discardableResult
+    func itemSize(width: CGFloat, height: CGFloat) -> Chain {
+        base.itemSize = CGSize(width: width, height: height)
+        return self
+    }
+    
+    @discardableResult
     func estimatedItemSize(_ estimatedItemSize: CGSize) -> Chain {
         base.estimatedItemSize = estimatedItemSize
+        return self
+    }
+    
+    @discardableResult
+    func estimatedItemSize(width: CGFloat, height: CGFloat) -> Chain {
+        base.estimatedItemSize = CGSize(width: width, height: height)
         return self
     }
     
@@ -44,14 +58,32 @@ public extension Chain where Base: UICollectionViewFlowLayout {
     }
     
     @discardableResult
+    func headerReferenceSize(width: CGFloat, height: CGFloat) -> Chain {
+        base.headerReferenceSize = CGSize(width: width, height: height)
+        return self
+    }
+    
+    @discardableResult
     func footerReferenceSize(_ footerReferenceSize: CGSize) -> Chain {
         base.footerReferenceSize = footerReferenceSize
         return self
     }
     
     @discardableResult
+    func footerReferenceSize(width: CGFloat, height: CGFloat) -> Chain {
+        base.footerReferenceSize = CGSize(width: width, height: height)
+        return self
+    }
+    
+    @discardableResult
     func sectionInset(_ sectionInset: UIEdgeInsets) -> Chain {
         base.sectionInset = sectionInset
+        return self
+    }
+    
+    @discardableResult
+    func sectionInset(top: CGFloat, left: CGFloat, bottom: CGFloat, right: CGFloat) -> Chain {
+        base.sectionInset = UIEdgeInsets(top: top, left: left, bottom: bottom, right: right)
         return self
     }
 }

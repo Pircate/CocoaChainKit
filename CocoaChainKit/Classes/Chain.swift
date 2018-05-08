@@ -9,6 +9,10 @@ public struct Chain<Base> {
     
     let base: Base
     
+    public var installed: Base {
+        return base
+    }
+    
     public init(_ base: Base) {
         self.base = base
     }
