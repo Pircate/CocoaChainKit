@@ -108,4 +108,34 @@ public extension Chain where Base: UIView {
         base.layer.borderColor = borderColor.cgColor
         return self
     }
+    
+    @discardableResult
+    func shadowColor(_ shadowColor: UIColor?) -> Chain {
+        base.layer.shadowColor = shadowColor?.cgColor
+        return self
+    }
+    
+    @discardableResult
+    func shadowOpacity(_ shadowOpacity: Float) -> Chain {
+        base.layer.shadowOpacity = shadowOpacity
+        return self
+    }
+    
+    @discardableResult
+    func shadowOffset(_ shadowOffset: CGSize) -> Chain {
+        base.layer.shadowOffset = shadowOffset
+        return self
+    }
+    
+    @discardableResult
+    func shadowRadius(_ shadowRadius: CGFloat) -> Chain {
+        base.layer.shadowRadius = shadowRadius
+        return self
+    }
+    
+    @discardableResult
+    func shadowPath(_ shadowPath: CGPath?) -> Chain {
+        base.layer.shadowPath = shadowPath
+        return self
+    }
 }
