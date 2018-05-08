@@ -1,0 +1,6 @@
+framework module Pods_CocoaChainKit_Example {
+  umbrella header "Pods-CocoaChainKit_Example-umbrella.h"
+
+  export *
+  module * { export * }
+}

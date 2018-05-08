@@ -30,9 +30,9 @@
 /* Begin PBXFileReference section */
 		19E2FF6B1A6B19E53B6BF062 /* Pods-CocoaChainKit_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CocoaChainKit_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CocoaChainKit_Tests/Pods-CocoaChainKit_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		202BD38E687EBEB9D2EBFDD9 /* Pods-CocoaChainKit_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CocoaChainKit_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-CocoaChainKit_Tests/Pods-CocoaChainKit_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		2E85C7E5B55A830368DFA1F2 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
-		3E7A827D7EEC97F8D413A0A2 /* CocoaChainKit.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = CocoaChainKit.podspec; path = ../CocoaChainKit.podspec; sourceTree = "<group>"; };
-		4867660C0735A9EB705259F5 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		2E85C7E5B55A830368DFA1F2 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		3E7A827D7EEC97F8D413A0A2 /* CocoaChainKit.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = CocoaChainKit.podspec; path = ../CocoaChainKit.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		4867660C0735A9EB705259F5 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		4AE03E8D0B55B46921E93EB7 /* Pods-CocoaChainKit_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CocoaChainKit_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CocoaChainKit_Example/Pods-CocoaChainKit_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		607FACD01AFB9204008FA782 /* CocoaChainKit_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CocoaChainKit_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
