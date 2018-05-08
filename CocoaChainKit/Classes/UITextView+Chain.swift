@@ -1,49 +1,50 @@
 //
-//  UITextView+Style.swift
+//  UITextView+Chain.swift
 //  CocoaChainKit
 //
 //  Created by GorXion on 2018/5/8.
 //
 
-public extension Style where Base: UITextView {
+public extension Chain where Base: UITextView {
+    
     @discardableResult
-    func textColor(_ textColor: UIColor) -> Style {
+    func textColor(_ textColor: UIColor) -> Chain {
         base.textColor = textColor
         return self
     }
     
     @discardableResult
-    func font(_ font: UIFont) -> Style {
+    func font(_ font: UIFont) -> Chain {
         base.font = font
         return self
     }
     
     @discardableResult
-    func systemFont(of size: CGFloat) -> Style {
+    func systemFont(of size: CGFloat) -> Chain {
         base.font = UIFont.systemFont(ofSize: size)
         return self
     }
     
     @discardableResult
-    func boldSystemFont(of size: CGFloat) -> Style {
+    func boldSystemFont(of size: CGFloat) -> Chain {
         base.font = UIFont.boldSystemFont(ofSize: size)
         return self
     }
     
     @discardableResult
-    func textAlignment(_ textAlignment: NSTextAlignment) -> Style {
+    func textAlignment(_ textAlignment: NSTextAlignment) -> Chain {
         base.textAlignment = textAlignment
         return self
     }
     
     @discardableResult
-    func isEditable(_ isEditable: Bool) -> Style {
+    func isEditable(_ isEditable: Bool) -> Chain {
         base.isEditable = isEditable
         return self
     }
     
     @discardableResult
-    func isSelectable(_ isSelectable: Bool) -> Style {
+    func isSelectable(_ isSelectable: Bool) -> Chain {
         base.isSelectable = isSelectable
         return self
     }

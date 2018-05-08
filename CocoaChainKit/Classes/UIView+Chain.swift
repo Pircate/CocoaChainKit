@@ -1,104 +1,104 @@
 //
-//  UIView+Style.swift
+//  UIView+Chain.swift
 //  CocoaChainKit
 //
 //  Created by GorXion on 2018/5/8.
 //
 
-extension UIView: StyleCompatible {}
+extension UIView: ChainCompatible {}
 
-public extension Style where Base: UIView {
+public extension Chain where Base: UIView {
     
-    var installed: Base {
+    var end: Base {
         return base
     }
     
     @discardableResult
-    func frame(_ frame: CGRect) -> Style {
+    func frame(_ frame: CGRect) -> Chain {
         base.frame = frame
         return self
     }
     
     @discardableResult
-    func bounds(_ bounds: CGRect) -> Style {
+    func bounds(_ bounds: CGRect) -> Chain {
         base.bounds = bounds
         return self
     }
     
     @discardableResult
-    func center(_ center: CGPoint) -> Style {
+    func center(_ center: CGPoint) -> Chain {
         base.center = center
         return self
     }
     
     @discardableResult
-    func backgroundColor(_ backgroundColor: UIColor) -> Style {
+    func backgroundColor(_ backgroundColor: UIColor) -> Chain {
         base.backgroundColor = backgroundColor
         return self
     }
     
     @discardableResult
-    func contentMode(_ contentMode: UIViewContentMode) -> Style {
+    func contentMode(_ contentMode: UIViewContentMode) -> Chain {
         base.contentMode = contentMode
         return self
     }
     
     @discardableResult
-    func clipsToBounds(_ clipsToBounds: Bool) -> Style {
+    func clipsToBounds(_ clipsToBounds: Bool) -> Chain {
         base.clipsToBounds = clipsToBounds
         return self
     }
     
     @discardableResult
-    func alpha(_ alpha: CGFloat) -> Style {
+    func alpha(_ alpha: CGFloat) -> Chain {
         base.alpha = alpha
         return self
     }
     
     @discardableResult
-    func isHidden(_ isHidden: Bool) -> Style {
+    func isHidden(_ isHidden: Bool) -> Chain {
         base.isHidden = isHidden
         return self
     }
     
     @discardableResult
-    func isOpaque(_ isOpaque: Bool) -> Style {
+    func isOpaque(_ isOpaque: Bool) -> Chain {
         base.isOpaque = isOpaque
         return self
     }
     
     @discardableResult
-    func isUserInteractionEnabled(_ isUserInteractionEnabled: Bool) -> Style {
+    func isUserInteractionEnabled(_ isUserInteractionEnabled: Bool) -> Chain {
         base.isUserInteractionEnabled = isUserInteractionEnabled
         return self
     }
     
     @discardableResult
-    func tintColor(_ tintColor: UIColor) -> Style {
+    func tintColor(_ tintColor: UIColor) -> Chain {
         base.tintColor = tintColor
         return self
     }
     
     @discardableResult
-    func cornerRadius(_ cornerRadius: CGFloat) -> Style {
+    func cornerRadius(_ cornerRadius: CGFloat) -> Chain {
         base.layer.cornerRadius = cornerRadius
         return self
     }
     
     @discardableResult
-    func masksToBounds(_ masksToBounds: Bool) -> Style {
+    func masksToBounds(_ masksToBounds: Bool) -> Chain {
         base.layer.masksToBounds = masksToBounds
         return self
     }
     
     @discardableResult
-    func borderWidth(_ borderWidth: CGFloat) -> Style {
+    func borderWidth(_ borderWidth: CGFloat) -> Chain {
         base.layer.borderWidth = borderWidth
         return self
     }
     
     @discardableResult
-    func borderColor(_ borderColor: UIColor) -> Style {
+    func borderColor(_ borderColor: UIColor) -> Chain {
         base.layer.borderColor = borderColor.cgColor
         return self
     }
