@@ -32,6 +32,7 @@
 		2F485B69F51E4F723A38410F31F08550 /* FBSnapshotTestController.h in Headers */ = {isa = PBXBuildFile; fileRef = 1AD41EB748BF83453B0E36E7ACB021BF /* FBSnapshotTestController.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		31C39ED8CB1C9317F1F2840FC919662D /* PostNotification.swift in Sources */ = {isa = PBXBuildFile; fileRef = 722B65BCF6B5C842506A8955E6161CD9 /* PostNotification.swift */; settings = {COMPILER_FLAGS = "-DPRODUCT_NAME=Nimble/Nimble"; }; };
 		32B38992751B96F21324BFC9923BFCBD /* AssertionDispatcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E3B55C53EB21C5DB6665D3A4EDBB295 /* AssertionDispatcher.swift */; settings = {COMPILER_FLAGS = "-DPRODUCT_NAME=Nimble/Nimble"; }; };
+		33FE37B920A1D0EC0069434D /* UIActivityIndicatorView+Chain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33FE37B820A1D0EC0069434D /* UIActivityIndicatorView+Chain.swift */; };
 		35CADB1AD8E063A35DF68147F3183206 /* CwlMachBadInstructionHandler.h in Headers */ = {isa = PBXBuildFile; fileRef = 329D9CBE260B63EEF23DCEE07DFD1FCF /* CwlMachBadInstructionHandler.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		35DD05FD595A6FE7F5A0692D12E319DC /* UIImage+Diff.m in Sources */ = {isa = PBXBuildFile; fileRef = F893250228CB5A19E805F4C333611455 /* UIImage+Diff.m */; };
 		3B3A88E074630B1EBC2139F4F70F0443 /* ThrowAssertion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25B26A98F04E23CACE8BF6A277E65DA5 /* ThrowAssertion.swift */; settings = {COMPILER_FLAGS = "-DPRODUCT_NAME=Nimble/Nimble"; }; };
@@ -286,6 +287,7 @@
 		3240723E01763156474E22F05498557E /* Predicate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Predicate.swift; path = Sources/Nimble/Matchers/Predicate.swift; sourceTree = "<group>"; };
 		324557EA96EBD15814BAEED676E20CBF /* FBSnapshotTestCase.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = FBSnapshotTestCase.modulemap; sourceTree = "<group>"; };
 		329D9CBE260B63EEF23DCEE07DFD1FCF /* CwlMachBadInstructionHandler.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CwlMachBadInstructionHandler.h; path = Carthage/Checkouts/CwlPreconditionTesting/Sources/CwlMachBadInstructionHandler/include/CwlMachBadInstructionHandler.h; sourceTree = "<group>"; };
+		33FE37B820A1D0EC0069434D /* UIActivityIndicatorView+Chain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "UIActivityIndicatorView+Chain.swift"; path = "CocoaChainKit/Classes/UIActivityIndicatorView+Chain.swift"; sourceTree = "<group>"; };
 		340829F151652115C1F660E0627B5A3D /* Nimble.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Nimble.xcconfig; sourceTree = "<group>"; };
 		3419B294CA6C43D40AA9176EAC20A068 /* BeEmpty.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BeEmpty.swift; path = Sources/Nimble/Matchers/BeEmpty.swift; sourceTree = "<group>"; };
 		3531CE5F730F1DEC4FDBB944E7A8B12E /* CurrentTestCaseTracker.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CurrentTestCaseTracker.h; path = Sources/NimbleObjectiveC/CurrentTestCaseTracker.h; sourceTree = "<group>"; };
@@ -801,6 +803,7 @@
 				35D5A758FE4591172281E7CC6ADA85BE /* Chain.swift */,
 				64EAEB67F8A9D7E37ACCA6639B3182FA /* ChainCompatible.swift */,
 				2A1B3501D6AB3088C8946263BD67CA69 /* UIButton+Chain.swift */,
+				33FE37B820A1D0EC0069434D /* UIActivityIndicatorView+Chain.swift */,
 				F664CF70A56304639CE879462667278B /* UIControl+Chain.swift */,
 				B5479A2579578C53446AA9E0A9784C04 /* UIImageView+Chain.swift */,
 				B55DD55F20A1A861006502A1 /* UICollectionView+Chain.swift */,
@@ -1319,6 +1322,7 @@
 				A922AC43E9D08A0667D5CB0CE37D0909 /* UIButton+Chain.swift in Sources */,
 				B78990CDEF224EAE77C210C3F9ECB176 /* UIControl+Chain.swift in Sources */,
 				5EDB0181290DD919A3BE75B6D7AED4A8 /* UIImageView+Chain.swift in Sources */,
+				33FE37B920A1D0EC0069434D /* UIActivityIndicatorView+Chain.swift in Sources */,
 				7AFBC43175BBE7E8ABF21074AB84566B /* UILabel+Chain.swift in Sources */,
 				9402145AFF5DA3303E6518C353F2D55A /* UINavigationBar+Chain.swift in Sources */,
 				5702AC2E244A30ADD68249EAA798CA32 /* UIScrollView+Chain.swift in Sources */,
