@@ -56,14 +56,14 @@ public extension Chain where Base: UIButton {
     }
     
     @discardableResult
-    func systemFont(of size: CGFloat) -> Chain {
-        base.titleLabel?.font = UIFont.systemFont(ofSize: size)
+    func systemFont(ofSize fontSize: CGFloat) -> Chain {
+        base.titleLabel?.font = UIFont.systemFont(ofSize: fontSize)
         return self
     }
     
     @discardableResult
-    func boldSystemFont(of size: CGFloat) -> Chain {
-        base.titleLabel?.font = UIFont.boldSystemFont(ofSize: size)
+    func boldSystemFont(ofSize fontSize: CGFloat) -> Chain {
+        base.titleLabel?.font = UIFont.boldSystemFont(ofSize: fontSize)
         return self
     }
 }

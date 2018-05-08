@@ -13,10 +13,12 @@ class ViewController: UIViewController {
     
     private lazy var loginButton: UIButton = {
         return UIButton().chain
-            .frame(CGRect(x: 0, y: 0, width: 120, height: 30))
+            .frame(x: 0, y: 0, width: 120, height: 30)
             .center(view.center)
             .backgroundColor(UIColor.red)
+            .boldSystemFont(ofSize: 30)
             .title("Hello World", for: .normal)
+            .titleColor(UIColor.blue, for: .normal)
             .addTarget(self, action: #selector(buttonAction), for: .touchUpInside)
             .end
     }()
@@ -28,17 +30,18 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        view.addSubview(loginButton)
         
-        let button = UIButton(type: .custom)
+//        let button = UIButton(type: .custom)
         
-        button.chain
-            .frame(CGRect(x: 0, y: 0, width: 120, height: 30))
-            .center(view.center)
-            .backgroundColor(UIColor.red)
-            .title("Hello World", for: .normal)
-            .addTarget(self, action: #selector(buttonAction), for: .touchUpInside)
-        
-        view.addSubview(button)
+//        button.chain
+//            .frame(CGRect(x: 0, y: 0, width: 120, height: 30))
+//            .center(view.center)
+//            .backgroundColor(UIColor.red)
+//            .title("Hello World", for: .normal)
+//            .addTarget(self, action: #selector(buttonAction), for: .touchUpInside)
+//
+//        view.addSubview(button)
     }
 
     override func didReceiveMemoryWarning() {

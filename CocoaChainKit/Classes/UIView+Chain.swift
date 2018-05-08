@@ -20,6 +20,12 @@ public extension Chain where Base: UIView {
     }
     
     @discardableResult
+    func frame(x: CGFloat, y: CGFloat, width: CGFloat, height: CGFloat) -> Chain {
+        base.frame = CGRect(x: x, y: y, width: width, height: height)
+        return self
+    }
+    
+    @discardableResult
     func bounds(_ bounds: CGRect) -> Chain {
         base.bounds = bounds
         return self
