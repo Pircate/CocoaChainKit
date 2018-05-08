@@ -6,6 +6,18 @@
 //
 
 public extension Chain where Base: UITableView {
+
+    @discardableResult
+    func dataSource(_ dataSource: UITableViewDataSource?) -> Chain {
+        base.dataSource = dataSource
+        return self
+    }
+    
+    @discardableResult
+    func delegate(_ delegate: UITableViewDelegate?) -> Chain {
+        base.delegate = delegate
+        return self
+    }
     
     @discardableResult
     func rowHeight(_ rowHeight: CGFloat) -> Chain {

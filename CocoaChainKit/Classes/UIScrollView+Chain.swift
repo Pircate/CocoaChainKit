@@ -8,6 +8,12 @@
 public extension Chain where Base: UIScrollView {
     
     @discardableResult
+    func delegate(_ delegate: UIScrollViewDelegate?) -> Chain {
+        base.delegate = delegate
+        return self
+    }
+    
+    @discardableResult
     func contentOffset(_ contentOffset: CGPoint) -> Chain {
         base.contentOffset = contentOffset
         return self

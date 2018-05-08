@@ -8,6 +8,12 @@
 public extension Chain where Base: UITextField {
     
     @discardableResult
+    func delegate(_ delegate: UITextFieldDelegate?) -> Chain {
+        base.delegate = delegate
+        return self
+    }
+    
+    @discardableResult
     func textColor(_ textColor: UIColor) -> Chain {
         base.textColor = textColor
         return self
