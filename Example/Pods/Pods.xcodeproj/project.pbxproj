@@ -127,6 +127,8 @@
 		B2C151B20635A480E1937E3D2B509BB4 /* Async.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AEEE59D038DD6ECD5D9D0768105B4C4 /* Async.swift */; settings = {COMPILER_FLAGS = "-DPRODUCT_NAME=Nimble/Nimble"; }; };
 		B39E074EBDFECD71A847DF2A8C77E807 /* XCTestSuite+QuickTestSuiteBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = ACEB2127A47162166BDABA88DB4578CD /* XCTestSuite+QuickTestSuiteBuilder.m */; };
 		B4DAFB116A58502FE573F6721E2FEDD3 /* Behavior.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8958E6A104616DC4782A7B97FDA3B19B /* Behavior.swift */; };
+		B55DD56020A1A861006502A1 /* UICollectionView+Chain.swift in Sources */ = {isa = PBXBuildFile; fileRef = B55DD55F20A1A861006502A1 /* UICollectionView+Chain.swift */; };
+		B55DD56220A1A915006502A1 /* UICollectionViewFlowLayout+Chain.swift in Sources */ = {isa = PBXBuildFile; fileRef = B55DD56120A1A915006502A1 /* UICollectionViewFlowLayout+Chain.swift */; };
 		B7002DF191EA091CA0B2FB5292B783FC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 50FBC47DA706DBF982E54AA5ACC39EC9 /* Foundation.framework */; };
 		B758FB09FE2C06C1B8E36A71A9D76D41 /* FBSnapshotTestCase-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 4557264306694A128439E3C32B21072F /* FBSnapshotTestCase-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B78990CDEF224EAE77C210C3F9ECB176 /* UIControl+Chain.swift in Sources */ = {isa = PBXBuildFile; fileRef = F664CF70A56304639CE879462667278B /* UIControl+Chain.swift */; };
@@ -390,6 +392,8 @@
 		B32BBBDDC59BABFB2B02807EAA9ED7E2 /* CwlPreconditionTesting.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CwlPreconditionTesting.h; path = Carthage/Checkouts/CwlPreconditionTesting/Sources/CwlPreconditionTesting/Mach/CwlPreconditionTesting.h; sourceTree = "<group>"; };
 		B41C6D06731AEA313DD5A5EC8B9B56AF /* Callsite.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Callsite.swift; path = Sources/Quick/Callsite.swift; sourceTree = "<group>"; };
 		B5479A2579578C53446AA9E0A9784C04 /* UIImageView+Chain.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIImageView+Chain.swift"; path = "CocoaChainKit/Classes/UIImageView+Chain.swift"; sourceTree = "<group>"; };
+		B55DD55F20A1A861006502A1 /* UICollectionView+Chain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "UICollectionView+Chain.swift"; path = "CocoaChainKit/Classes/UICollectionView+Chain.swift"; sourceTree = "<group>"; };
+		B55DD56120A1A915006502A1 /* UICollectionViewFlowLayout+Chain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "UICollectionViewFlowLayout+Chain.swift"; path = "CocoaChainKit/Classes/UICollectionViewFlowLayout+Chain.swift"; sourceTree = "<group>"; };
 		B5C67BFE2590E6B51BEB2BD4428FEA7E /* FBSnapshotTestCase.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FBSnapshotTestCase.m; path = FBSnapshotTestCase/FBSnapshotTestCase.m; sourceTree = "<group>"; };
 		B87CBE26A3C7F4052BFF8E113461E21E /* NBSMockedApplication.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = NBSMockedApplication.h; path = DynamicType/NBSMockedApplication.h; sourceTree = "<group>"; };
 		B8C211D266DA9534E8B6DF13D9A0CE11 /* Nimble-Snapshots.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Nimble-Snapshots.xcconfig"; sourceTree = "<group>"; };
@@ -799,6 +803,8 @@
 				2A1B3501D6AB3088C8946263BD67CA69 /* UIButton+Chain.swift */,
 				F664CF70A56304639CE879462667278B /* UIControl+Chain.swift */,
 				B5479A2579578C53446AA9E0A9784C04 /* UIImageView+Chain.swift */,
+				B55DD55F20A1A861006502A1 /* UICollectionView+Chain.swift */,
+				B55DD56120A1A915006502A1 /* UICollectionViewFlowLayout+Chain.swift */,
 				FC6110061795C393E90A2000D4DB04AD /* UILabel+Chain.swift */,
 				D4829E3CB7DE7C1DFE34456A97F34312 /* UINavigationBar+Chain.swift */,
 				CB503E27B87DB4BBF35A66D8F985C7F8 /* UIScrollView+Chain.swift */,
@@ -1307,6 +1313,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E6C74EB1AFD73FF94CB8D552F8D03BC2 /* Chain.swift in Sources */,
+				B55DD56220A1A915006502A1 /* UICollectionViewFlowLayout+Chain.swift in Sources */,
 				BAA15E6BBE4B7C98256EF2F379FF07D8 /* ChainCompatible.swift in Sources */,
 				5EEF605FA97DD7FB01A000F6C4C21851 /* CocoaChainKit-dummy.m in Sources */,
 				A922AC43E9D08A0667D5CB0CE37D0909 /* UIButton+Chain.swift in Sources */,
@@ -1316,6 +1323,7 @@
 				9402145AFF5DA3303E6518C353F2D55A /* UINavigationBar+Chain.swift in Sources */,
 				5702AC2E244A30ADD68249EAA798CA32 /* UIScrollView+Chain.swift in Sources */,
 				605EB4054AE5747C6E0E164CFB6AFC4B /* UITableView+Chain.swift in Sources */,
+				B55DD56020A1A861006502A1 /* UICollectionView+Chain.swift in Sources */,
 				20A0638322336CEA008FE29024A419F0 /* UITextField+Chain.swift in Sources */,
 				A9348CFB0C2DE88588F008AB58282531 /* UITextView+Chain.swift in Sources */,
 				A8B941A5A63DA09662A7A2556233E42A /* UIView+Chain.swift in Sources */,
