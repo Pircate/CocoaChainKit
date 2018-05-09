@@ -5,8 +5,6 @@
 //  Created by GorXion on 2018/5/9.
 //
 
-extension UIGestureRecognizer: ChainCompatible {}
-
 public extension Chain where Base: UIGestureRecognizer {
     
     @discardableResult

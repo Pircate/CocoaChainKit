@@ -46,6 +46,13 @@ class ViewController: UIViewController {
         
         view.addSubview(tableView)
         view.addSubview(button)
+        
+        let attrText = NSMutableAttributedString(string: "Hello World").chain
+            .systemFont(ofSize: 18)
+            .foregroundColor(UIColor.yellow)
+            .strikethroughStyle(1)
+            .backgroundColor(UIColor.blue).installed
+        button.setAttributedTitle(attrText, for: .normal)
     }
 
     override func didReceiveMemoryWarning() {
