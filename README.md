@@ -24,84 +24,11 @@ pod 'CocoaChainKit'
 
 ### before
 
-```swift
-let button = UIButton(type: .custom)
-button.frame = CGRect(x: 0, y: 0, width: 120, height: 30)
-button.center = view.center
-button.backgroundColor = UIColor.red
-button.titleLabel?.font = UIFont.systemFont(ofSize: 14)
-button.setTitle("Hello World", for: .normal)
-button.setTitleColor(UIColor.blue, for: .normal)
-button.layer.cornerRadius = 15
-button.layer.masksToBounds = true
-button.addTarget(self, action: #selector(buttonAction), for: .touchUpInside)
-
-
-private lazy var collectionView: UICollectionView = {
-    let flowLayout = UICollectionViewFlowLayout()
-    flowLayout.itemSize = CGSize(width: 80, height: 80)
-    flowLayout.minimumLineSpacing = 20
-    flowLayout.minimumInteritemSpacing = 10
-    let collectionView = UICollectionView(frame: CGRect.zero, collectionViewLayout: flowLayout)
-    collectionView.backgroundColor = UIColor.white
-    collectionView.register(UICollectionViewCell.self, forCellWithReuseIdentifier: "cellID")
-    collectionView.register(UICollectionReusableView.self, forSupplementaryViewOfKind: UICollectionElementKindSectionHeader, withReuseIdentifier: "header")
-    return collectionView
-}()
-
-
-let attrText = NSMutableAttributedString(string: "Hello World")
-attrText.addAttribute(.font, value: UIFont.systemFont(ofSize: 18), range: NSMakeRange(0, attrText.length))
-attrText.addAttribute(.foregroundColor, value: UIColor.yellow, range: NSMakeRange(0, 5))
-attrText.addAttribute(.backgroundColor, value: UIColor.blue, range: NSMakeRange(0, attrText.length))
-attrText.addAttribute(.baselineOffset, value: 5, range: NSMakeRange(6, 5))
-attrText.addAttribute(.kern, value: 0.5, range: NSMakeRange(0, attrText.length))
-attrText.addAttribute(.strikethroughStyle, value: 1, range: NSMakeRange(0, attrText.length))
-attrText.addAttribute(.underlineStyle, value: 1, range: NSMakeRange(0, attrText.length))
-attrText.addAttribute(.writingDirection, value: [3], range: NSMakeRange(0, attrText.length))
-```
+![](https://github.com/Ginxx/CocoaChainKit/blob/master/Example/before.png)
 
 ### use chain kit
 
-```swift
-let button = UIButton(type: .custom)
-button.chain
-    .frame(x: 0, y: 0, width: 120, height: 30)
-    .center(view.center)
-    .backgroundColor(UIColor.red)
-    .systemFont(ofSize: 14)
-    .title("Hello World", for: .normal)
-    .titleColor(UIColor.blue, for: .normal)
-    .cornerRadius(15)
-    .masksToBounds(true)
-    .addTarget(self, action: #selector(buttonAction), for: .touchUpInside)
-
-
-lazy var collectionView: UICollectionView = {
-    let flowLayout = UICollectionViewFlowLayout().chain
-        .itemSize(width: 80, height: 80)
-        .minimumLineSpacing(20)
-        .minimumInteritemSpacing(10)
-        .installed
-    return UICollectionView(frame: CGRect.zero, collectionViewLayout: flowLayout).chain
-        .backgroundColor(UIColor.white)
-        .register(UICollectionViewCell.self, forCellWithReuseIdentifier: "cellID")
-        .register(UICollectionReusableView.self, forSectionHeaderWithReuseIdentifier: "header")
-        .installed
-}()
-
-
-let attrText = NSMutableAttributedString(string: "Hello World")
-attrText.chain
-    .systemFont(ofSize: 18)
-    .foregroundColor(UIColor.yellow, range: NSMakeRange(0, 5))
-    .backgroundColor(UIColor.blue)
-    .baselineOffset(5, range: NSMakeRange(6, 5))
-    .kern(0.5)
-    .strikethroughStyle(1)
-    .underlineStyle(1)
-    .writingDirection([3])
-```
+![](https://github.com/Ginxx/CocoaChainKit/blob/master/Example/cocoa_chain_kit.png)
 
 ## Author
 
