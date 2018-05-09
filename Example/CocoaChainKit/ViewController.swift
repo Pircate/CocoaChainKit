@@ -49,9 +49,14 @@ class ViewController: UIViewController {
         
         let attrText = NSMutableAttributedString(string: "Hello World").chain
             .systemFont(ofSize: 18)
-            .foregroundColor(UIColor.yellow)
+            .foregroundColor(UIColor.yellow, range: NSMakeRange(0, 5))
+            .backgroundColor(UIColor.blue)
+            .baselineOffset(5, range: NSMakeRange(6, 5))
+            .kern(0.5)
             .strikethroughStyle(1)
-            .backgroundColor(UIColor.blue).installed
+            .underlineStyle(1)
+            .writingDirection([3]).installed
+        
         button.setAttributedTitle(attrText, for: .normal)
     }
 
