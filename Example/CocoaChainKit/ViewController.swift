@@ -56,8 +56,33 @@ class ViewController: UIViewController {
             .strikethroughStyle(1)
             .underlineStyle(1)
             .writingDirection([3]).installed
-        
         button.setAttributedTitle(attrText, for: .normal)
+        
+        UserDefaults.standard.chain
+            .set(123, forKey: "integer")
+            .set("string", forKey: "string")
+            .set(false, forKey: "boolean")
+            .synchronize()
+        
+        debugPrint(UserDefaults.standard.integer(forKey: "integer"))
+        debugPrint(UserDefaults.standard.string(forKey: "string") ?? "")
+        debugPrint(UserDefaults.standard.bool(forKey: "boolean"))
+        
+        DateFormatter().chain.dateFormat("").dateStyle(.full)
+        
+        let name0 = Notification.Name("notification0")
+        let name1 = Notification.Name("notification1")
+        let name2 = Notification.Name("notification2")
+        
+        NotificationCenter.default.chain
+            .addObserver(self, selector: #selector(notificationAction0), name: name0)
+            .addObserver(self, selector: #selector(notificationAction2), name: name2)
+            .addObserver(self, selector: #selector(notificationAction1), name: name1)
+        
+        NotificationCenter.default.chain
+            .post(name: name1)
+            .post(Notification(name: name2))
+            .post(name: name0)
     }
 
     override func didReceiveMemoryWarning() {
@@ -67,6 +92,18 @@ class ViewController: UIViewController {
 
     @objc private func buttonAction() {
         debugPrint("Hello World")
+    }
+    
+    @objc private func notificationAction0() {
+        debugPrint("notificationAction0")
+    }
+    
+    @objc private func notificationAction1() {
+        debugPrint("notificationAction1")
+    }
+    
+    @objc private func notificationAction2() {
+        debugPrint("notificationAction2")
     }
 }
 
