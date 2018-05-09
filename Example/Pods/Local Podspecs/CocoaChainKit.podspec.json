@@ -1,7 +1,7 @@
 {
   "name": "CocoaChainKit",
   "version": "0.1.2",
-  "summary": "一款UIKit的链式调用框架.",
+  "summary": "一款链式调用框架.",
   "description": "TODO: Add long description of the pod here.",
   "homepage": "https://github.com/Ginxx/CocoaChainKit",
   "license": {
