@@ -22,8 +22,37 @@ pod 'CocoaChainKit'
 
 ## Usage
 
+### before
+
 ```swift
-UIButton().chain
+button.frame = CGRect(x: 0, y: 0, width: 120, height: 30)
+button.center = view.center
+button.backgroundColor = UIColor.red
+button.titleLabel?.font = UIFont.systemFont(ofSize: 14)
+button.setTitle("Hello World", for: .normal)
+button.setTitleColor(UIColor.blue, for: .normal)
+button.layer.cornerRadius = 15
+button.layer.masksToBounds = true
+button.addTarget(self, action: #selector(buttonAction), for: .touchUpInside)
+
+
+private lazy var collectionView: UICollectionView = {
+    let flowLayout = UICollectionViewFlowLayout()
+    flowLayout.itemSize = CGSize(width: 80, height: 80)
+    flowLayout.minimumLineSpacing = 20
+    flowLayout.minimumInteritemSpacing = 10
+    let collectionView = UICollectionView(frame: CGRect.zero, collectionViewLayout: flowLayout)
+    collectionView.backgroundColor = UIColor.white
+    collectionView.register(UICollectionViewCell.self, forCellWithReuseIdentifier: "cellID")
+    collectionView.register(UICollectionReusableView.self, forSupplementaryViewOfKind: UICollectionElementKindSectionHeader, withReuseIdentifier: "header")
+    return collectionView
+}()
+```
+
+### use chain kit
+
+```swift
+button.chain
     .frame(x: 0, y: 0, width: 120, height: 30)
     .center(view.center)
     .backgroundColor(UIColor.red)
@@ -33,9 +62,8 @@ UIButton().chain
     .cornerRadius(15)
     .masksToBounds(true)
     .addTarget(self, action: #selector(buttonAction), for: .touchUpInside)
-    .installed
-    
-    
+
+
 lazy var collectionView: UICollectionView = {
     let flowLayout = UICollectionViewFlowLayout().chain
         .itemSize(width: 80, height: 80)
