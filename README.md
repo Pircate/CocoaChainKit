@@ -25,6 +25,7 @@ pod 'CocoaChainKit'
 ### before
 
 ```swift
+let button = UIButton(type: .custom)
 button.frame = CGRect(x: 0, y: 0, width: 120, height: 30)
 button.center = view.center
 button.backgroundColor = UIColor.red
@@ -47,11 +48,23 @@ private lazy var collectionView: UICollectionView = {
     collectionView.register(UICollectionReusableView.self, forSupplementaryViewOfKind: UICollectionElementKindSectionHeader, withReuseIdentifier: "header")
     return collectionView
 }()
+
+
+let attrText = NSMutableAttributedString(string: "Hello World")
+attrText.addAttribute(.font, value: UIFont.systemFont(ofSize: 18), range: NSMakeRange(0, attrText.length))
+attrText.addAttribute(.foregroundColor, value: UIColor.yellow, range: NSMakeRange(0, 5))
+attrText.addAttribute(.backgroundColor, value: UIColor.blue, range: NSMakeRange(0, attrText.length))
+attrText.addAttribute(.baselineOffset, value: 5, range: NSMakeRange(6, 5))
+attrText.addAttribute(.kern, value: 0.5, range: NSMakeRange(0, attrText.length))
+attrText.addAttribute(.strikethroughStyle, value: 1, range: NSMakeRange(0, attrText.length))
+attrText.addAttribute(.underlineStyle, value: 1, range: NSMakeRange(0, attrText.length))
+attrText.addAttribute(.writingDirection, value: [3], range: NSMakeRange(0, attrText.length))
 ```
 
 ### use chain kit
 
 ```swift
+let button = UIButton(type: .custom)
 button.chain
     .frame(x: 0, y: 0, width: 120, height: 30)
     .center(view.center)
@@ -76,6 +89,18 @@ lazy var collectionView: UICollectionView = {
         .register(UICollectionReusableView.self, forSectionHeaderWithReuseIdentifier: "header")
         .installed
 }()
+
+
+let attrText = NSMutableAttributedString(string: "Hello World")
+attrText.chain
+    .systemFont(ofSize: 18)
+    .foregroundColor(UIColor.yellow, range: NSMakeRange(0, 5))
+    .backgroundColor(UIColor.blue)
+    .baselineOffset(5, range: NSMakeRange(6, 5))
+    .kern(0.5)
+    .strikethroughStyle(1)
+    .underlineStyle(1)
+    .writingDirection([3])
 ```
 
 ## Author
