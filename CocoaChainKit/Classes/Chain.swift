@@ -7,7 +7,7 @@
 
 public struct Chain<Base> {
     
-    let base: Base
+    public let base: Base
     
     public var installed: Base {
         return base

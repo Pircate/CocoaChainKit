@@ -68,7 +68,10 @@ class ViewController: UIViewController {
         debugPrint(UserDefaults.standard.string(forKey: "string") ?? "")
         debugPrint(UserDefaults.standard.bool(forKey: "boolean"))
         
-        DateFormatter().chain.dateFormat("").dateStyle(.full)
+        DateFormatter().chain
+            .dateFormat("")
+            .dateStyle(.full)
+            .timeZone(.current)
         
         let name0 = Notification.Name("notification0")
         let name1 = Notification.Name("notification1")
