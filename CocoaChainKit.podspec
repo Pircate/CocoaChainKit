@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'CocoaChainKit'
-  s.version          = '0.3.0'
+  s.version          = '0.3.1'
   s.summary          = '一款链式调用框架.'
 
 # This description is used to generate tags and improve search results.
