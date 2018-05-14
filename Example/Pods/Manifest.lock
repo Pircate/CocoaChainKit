@@ -1,5 +1,5 @@
 PODS:
-  - CocoaChainKit (0.3.1)
+  - CocoaChainKit (0.3.2)
   - FBSnapshotTestCase (2.1.4):
     - FBSnapshotTestCase/SwiftSupport (= 2.1.4)
   - FBSnapshotTestCase/Core (2.1.4)
@@ -32,7 +32,7 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  CocoaChainKit: 71adc45ed23e8dd9fba01b050f38b2c52eca9d58
+  CocoaChainKit: ec7ed1ecbc3b76443130e5f6872a6120dbf87ad4
   FBSnapshotTestCase: 094f9f314decbabe373b87cc339bea235a63e07a
   Nimble: 7f5a9c447a33002645a071bddafbfb24ea70e0ac
   Nimble-Snapshots: f5459b5b091678dc942d03ec4741cacb58ba4a52
