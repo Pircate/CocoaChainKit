@@ -12,7 +12,7 @@ import CocoaChainKit
 class ViewController: UIViewController {
     
     private lazy var button: UIButton = {
-        UIButton().chain
+        UIButton(type: .custom).chain
             .frame(x: 0, y: 0, width: 120, height: 30)
             .center(view.center)
             .backgroundColor(UIColor.red)
@@ -25,7 +25,7 @@ class ViewController: UIViewController {
     }()
     
     private lazy var tableView: UITableView = {
-        return UITableView(frame: view.bounds, style: .plain).chain
+        UITableView(frame: view.bounds, style: .plain).chain
             .rowHeight(44)
             .register(UITableViewCell.self, forCellReuseIdentifier: "cellID").build
     }()
