@@ -21,24 +21,24 @@ class ViewController: UIViewController {
             .titleColor(UIColor.blue, for: .normal)
             .cornerRadius(15)
             .masksToBounds(true)
-            .addTarget(self, action: #selector(buttonAction), for: .touchUpInside).installed
+            .addTarget(self, action: #selector(buttonAction), for: .touchUpInside).build
     }()
     
     private lazy var tableView: UITableView = {
         return UITableView(frame: view.bounds, style: .plain).chain
             .rowHeight(44)
-            .register(UITableViewCell.self, forCellReuseIdentifier: "cellID").installed
+            .register(UITableViewCell.self, forCellReuseIdentifier: "cellID").build
     }()
     
     private lazy var collectionView: UICollectionView = {
         let flowLayout = UICollectionViewFlowLayout().chain
             .itemSize(width: 80, height: 80)
             .minimumLineSpacing(20)
-            .minimumInteritemSpacing(10).installed
+            .minimumInteritemSpacing(10).build
         return UICollectionView(frame: CGRect.zero, collectionViewLayout: flowLayout).chain
             .backgroundColor(UIColor.white)
             .register(UICollectionViewCell.self, forCellWithReuseIdentifier: "cellID")
-            .register(UICollectionReusableView.self, forSectionHeaderWithReuseIdentifier: "header").installed
+            .register(UICollectionReusableView.self, forSectionHeaderWithReuseIdentifier: "header").build
     }()
 
     override func viewDidLoad() {
@@ -55,7 +55,7 @@ class ViewController: UIViewController {
             .kern(0.5)
             .strikethroughStyle(1)
             .underlineStyle(1)
-            .writingDirection([3]).installed
+            .writingDirection([3]).build
         button.setAttributedTitle(attrText, for: .normal)
         
         UserDefaults.standard.chain
