@@ -138,4 +138,18 @@ public extension Chain where Base: UITextField {
         base.returnKeyType = returnKeyType
         return self
     }
+    
+    @discardableResult
+    func isSecureTextEntry(_ isSecureTextEntry: Bool) -> Chain {
+        base.isSecureTextEntry = isSecureTextEntry
+        return self
+    }
+    
+    @discardableResult
+    func textContentType(_ textContentType: UITextContentType) -> Chain {
+        if #available(iOS 10.0, *) {
+            base.textContentType = textContentType
+        }
+        return self
+    }
 }
