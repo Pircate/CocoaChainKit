@@ -18,7 +18,7 @@ class ViewController: UIViewController {
             .backgroundColor(UIColor.red)
             .systemFont(ofSize: 14)
             .title("Hello World", for: .normal)
-            .titleColor(UIColor.blue, for: .normal)
+            .titleColor(UIColor.blue, for: .normal, .highlighted)
             .cornerRadius(15)
             .masksToBounds(true)
             .addTarget(self, action: #selector(buttonAction), for: .touchUpInside).build
