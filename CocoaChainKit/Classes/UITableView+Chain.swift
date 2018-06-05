@@ -56,7 +56,7 @@ public extension Chain where Base: UITableView {
     }
     
     @discardableResult
-    func separatorStyle(_ separatorStyle: UITableViewCellSeparatorStyle) -> Chain {
+    func separatorStyle(_ separatorStyle: UITableViewCell.SeparatorStyle) -> Chain {
         base.separatorStyle = separatorStyle
         return self
     }
