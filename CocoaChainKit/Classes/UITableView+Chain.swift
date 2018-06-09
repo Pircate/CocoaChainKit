@@ -56,6 +56,30 @@ public extension Chain where Base: UITableView {
     }
     
     @discardableResult
+    func sectionIndexColor(_ sectionIndexColor: UIColor?) -> Chain {
+        base.sectionIndexColor = sectionIndexColor
+        return self
+    }
+    
+    @discardableResult
+    func sectionIndexBackgroundColor(_ sectionIndexBackgroundColor: UIColor?) -> Chain {
+        base.sectionIndexBackgroundColor = sectionIndexBackgroundColor
+        return self
+    }
+    
+    @discardableResult
+    func sectionIndexTrackingBackgroundColor(_ sectionIndexTrackingBackgroundColor: UIColor?) -> Chain {
+        base.sectionIndexTrackingBackgroundColor = sectionIndexTrackingBackgroundColor
+        return self
+    }
+    
+    @discardableResult
+    func sectionIndexMinimumDisplayRowCount(_ sectionIndexMinimumDisplayRowCount: Int) -> Chain {
+        base.sectionIndexMinimumDisplayRowCount = sectionIndexMinimumDisplayRowCount
+        return self
+    }
+    
+    @discardableResult
     func separatorStyle(_ separatorStyle: UITableViewCellSeparatorStyle) -> Chain {
         base.separatorStyle = separatorStyle
         return self
