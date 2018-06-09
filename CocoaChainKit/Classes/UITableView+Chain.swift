@@ -68,6 +68,12 @@ public extension Chain where Base: UITableView {
     }
     
     @discardableResult
+    func separatorInset(_ separatorInset: UIEdgeInsets) -> Chain {
+        base.separatorInset = separatorInset
+        return self
+    }
+    
+    @discardableResult
     func register(_ nib: UINib?, forCellReuseIdentifier identifier: String) -> Chain {
         base.register(nib, forCellReuseIdentifier: identifier)
         return self
