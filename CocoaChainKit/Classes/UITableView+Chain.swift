@@ -98,6 +98,18 @@ public extension Chain where Base: UITableView {
     }
     
     @discardableResult
+    func tableHeaderView(_ tableHeaderView: UIView?) -> Chain {
+        base.tableHeaderView = tableHeaderView
+        return self
+    }
+    
+    @discardableResult
+    func tableFooterView(_ tableFooterView: UIView?) -> Chain {
+        base.tableFooterView = tableFooterView
+        return self
+    }
+    
+    @discardableResult
     func register(_ nib: UINib?, forCellReuseIdentifier identifier: String) -> Chain {
         base.register(nib, forCellReuseIdentifier: identifier)
         return self
