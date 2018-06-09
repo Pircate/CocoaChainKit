@@ -44,7 +44,7 @@ public extension Chain where Base: UICollectionViewFlowLayout {
     }
     
     @discardableResult
-    func scrollDirection(_ scrollDirection: UICollectionView.ScrollDirection) -> Chain {
+    func scrollDirection(_ scrollDirection: UICollectionViewScrollDirection) -> Chain {
         base.scrollDirection = scrollDirection
         return self
     }

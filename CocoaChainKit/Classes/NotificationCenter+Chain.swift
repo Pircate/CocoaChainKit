@@ -10,7 +10,7 @@ public extension Chain where Base: NotificationCenter {
     @discardableResult
     func addObserver(_ observer: Any,
                      selector aSelector: Selector,
-                     name aName: Notification.Name?,
+                     name aName: NSNotification.Name?,
                      object anObject: Any? = nil) -> Chain {
         base.addObserver(observer, selector: aSelector, name: aName, object: anObject)
         return self
@@ -23,7 +23,7 @@ public extension Chain where Base: NotificationCenter {
     }
     
     @discardableResult
-    func post(name aName: Notification.Name,
+    func post(name aName: NSNotification.Name,
               object anObject: Any? = nil,
               userInfo aUserInfo: [AnyHashable : Any]? = nil) -> Chain {
         base.post(name: aName, object: anObject, userInfo: aUserInfo)

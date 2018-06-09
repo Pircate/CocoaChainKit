@@ -50,27 +50,27 @@ public extension Chain where Base: UIStepper {
     }
     
     @discardableResult
-    func backgroundImage(_ image: UIImage?, for state: UIControl.State) -> Chain {
+    func backgroundImage(_ image: UIImage?, for state: UIControlState) -> Chain {
         base.setBackgroundImage(image, for: state)
         return self
     }
     
     @discardableResult
     func dividerImage(_ image: UIImage?,
-                      forLeftSegmentState leftState: UIControl.State,
-                      rightSegmentState rightState: UIControl.State) -> Chain {
+                      forLeftSegmentState leftState: UIControlState,
+                      rightSegmentState rightState: UIControlState) -> Chain {
         base.setDividerImage(image, forLeftSegmentState: leftState, rightSegmentState: rightState)
         return self
     }
     
     @discardableResult
-    func incrementImage(_ image: UIImage?, for state: UIControl.State) -> Chain {
+    func incrementImage(_ image: UIImage?, for state: UIControlState) -> Chain {
         base.setIncrementImage(image, for: state)
         return self
     }
     
     @discardableResult
-    func decrementImage(_ image: UIImage?, for state: UIControl.State) -> Chain {
+    func decrementImage(_ image: UIImage?, for state: UIControlState) -> Chain {
         base.setDecrementImage(image, for: state)
         return self
     }

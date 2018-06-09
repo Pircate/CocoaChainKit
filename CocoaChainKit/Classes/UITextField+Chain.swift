@@ -68,13 +68,13 @@ public extension Chain where Base: UITextField {
     }
     
     @discardableResult
-    func borderStyle(_ borderStyle: UITextField.BorderStyle) -> Chain {
+    func borderStyle(_ borderStyle: UITextBorderStyle) -> Chain {
         base.borderStyle = borderStyle
         return self
     }
     
     @discardableResult
-    func defaultTextAttributes(_ defaultTextAttributes: [NSAttributedString.Key: Any]) -> Chain {
+    func defaultTextAttributes(_ defaultTextAttributes: [String: Any]) -> Chain {
         base.defaultTextAttributes = defaultTextAttributes
         return self
     }
@@ -104,25 +104,25 @@ public extension Chain where Base: UITextField {
     }
     
     @discardableResult
-    func typingAttributes(_ typingAttributes: [NSAttributedString.Key: Any]?) -> Chain {
+    func typingAttributes(_ typingAttributes: [String: Any]?) -> Chain {
         base.typingAttributes = typingAttributes
         return self
     }
     
     @discardableResult
-    func clearButtonMode(_ clearButtonMode: UITextField.ViewMode) -> Chain {
+    func clearButtonMode(_ clearButtonMode: UITextFieldViewMode) -> Chain {
         base.clearButtonMode = clearButtonMode
         return self
     }
     
     @discardableResult
-    func leftViewMode(_ leftViewMode: UITextField.ViewMode) -> Chain {
+    func leftViewMode(_ leftViewMode: UITextFieldViewMode) -> Chain {
         base.leftViewMode = leftViewMode
         return self
     }
     
     @discardableResult
-    func rightViewMode(_ rightViewMode: UITextField.ViewMode) -> Chain {
+    func rightViewMode(_ rightViewMode: UITextFieldViewMode) -> Chain {
         base.rightViewMode = rightViewMode
         return self
     }

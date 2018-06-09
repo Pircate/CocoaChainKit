@@ -8,7 +8,7 @@
 public extension Chain where Base: UIActivityIndicatorView {
     
     @discardableResult
-    func activityIndicatorViewStyle(_ activityIndicatorViewStyle: UIActivityIndicatorView.Style) -> Chain {
+    func activityIndicatorViewStyle(_ activityIndicatorViewStyle: UIActivityIndicatorViewStyle) -> Chain {
         base.activityIndicatorViewStyle = activityIndicatorViewStyle
         return self
     }
