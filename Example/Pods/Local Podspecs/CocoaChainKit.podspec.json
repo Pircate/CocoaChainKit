@@ -1,9 +1,9 @@
 {
   "name": "CocoaChainKit",
-  "version": "0.4.6",
+  "version": "0.4.7",
   "summary": "一款链式调用框架.",
   "description": "TODO: Add long description of the pod here.",
-  "homepage": "https://github.com/Ginxx/CocoaChainKit",
+  "homepage": "https://github.com/Pircate/CocoaChainKit",
   "license": {
     "type": "MIT",
     "file": "LICENSE"
@@ -12,8 +12,8 @@
     "gaoX": "gao497868860@163.com"
   },
   "source": {
-    "git": "https://github.com/Ginxx/CocoaChainKit.git",
-    "tag": "0.4.6"
+    "git": "https://github.com/Pircate/CocoaChainKit.git",
+    "tag": "0.4.7"
   },
   "platforms": {
     "ios": "8.0"
