@@ -120,4 +120,16 @@ public extension Chain where Base: UITableView {
         base.register(cellClass, forCellReuseIdentifier: identifier)
         return self
     }
+    
+    @discardableResult
+    func register(_ nib: UINib?, forHeaderFooterViewReuseIdentifier identifier: String) -> Chain {
+        base.register(nib, forHeaderFooterViewReuseIdentifier: identifier)
+        return self
+    }
+    
+    @discardableResult
+    func register(_ aClass: Swift.AnyClass?, forHeaderFooterViewReuseIdentifier identifier: String) -> Chain {
+        base.register(aClass, forHeaderFooterViewReuseIdentifier: identifier)
+        return self
+    }
 }
