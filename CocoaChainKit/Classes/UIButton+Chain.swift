@@ -61,22 +61,4 @@ public extension Chain where Base: UIButton {
         base.imageEdgeInsets = UIEdgeInsets(top: top, left: left, bottom: bottom, right: right)
         return self
     }
-    
-    @discardableResult
-    func font(_ font: UIFont) -> Chain {
-        base.titleLabel?.font = font
-        return self
-    }
-    
-    @discardableResult
-    func systemFont(ofSize fontSize: CGFloat) -> Chain {
-        base.titleLabel?.font = UIFont.systemFont(ofSize: fontSize)
-        return self
-    }
-    
-    @discardableResult
-    func boldSystemFont(ofSize fontSize: CGFloat) -> Chain {
-        base.titleLabel?.font = UIFont.boldSystemFont(ofSize: fontSize)
-        return self
-    }
 }

@@ -32,24 +32,6 @@ public extension Chain where Base: UITextField {
     }
     
     @discardableResult
-    func font(_ font: UIFont) -> Chain {
-        base.font = font
-        return self
-    }
-    
-    @discardableResult
-    func systemFont(ofSize fontSize: CGFloat) -> Chain {
-        base.font = UIFont.systemFont(ofSize: fontSize)
-        return self
-    }
-    
-    @discardableResult
-    func boldSystemFont(ofSize fontSize: CGFloat) -> Chain {
-        base.font = UIFont.boldSystemFont(ofSize: fontSize)
-        return self
-    }
-    
-    @discardableResult
     func textAlignment(_ textAlignment: NSTextAlignment) -> Chain {
         base.textAlignment = textAlignment
         return self
