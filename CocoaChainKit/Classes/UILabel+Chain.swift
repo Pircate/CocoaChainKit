@@ -54,4 +54,10 @@ public extension Chain where Base: UILabel {
         base.textAlignment = textAlignment
         return self
     }
+    
+    @discardableResult
+    func adjustsFontSizeToFitWidth(_ adjustsFontSizeToFitWidth: Bool) -> Chain {
+        base.adjustsFontSizeToFitWidth = adjustsFontSizeToFitWidth
+        return self
+    }
 }
