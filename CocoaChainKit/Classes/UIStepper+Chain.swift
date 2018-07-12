@@ -50,8 +50,8 @@ public extension Chain where Base: UIStepper {
     }
     
     @discardableResult
-    func backgroundImage(_ image: UIImage?, for state: UIControlState) -> Chain {
-        base.setBackgroundImage(image, for: state)
+    func backgroundImage(_ image: UIImage?, for state: UIControlState...) -> Chain {
+        state.forEach { base.setBackgroundImage(image, for: $0) }
         return self
     }
     

@@ -98,6 +98,12 @@ public extension Chain where Base: UITableView {
     }
     
     @discardableResult
+    func separatorInset(top: CGFloat, left: CGFloat, bottom: CGFloat, right: CGFloat) -> Chain {
+        base.separatorInset = UIEdgeInsets(top: top, left: left, bottom: bottom, right: right)
+        return self
+    }
+    
+    @discardableResult
     func tableHeaderView(_ tableHeaderView: UIView?) -> Chain {
         base.tableHeaderView = tableHeaderView
         return self
