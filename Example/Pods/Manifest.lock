@@ -1,5 +1,5 @@
 PODS:
-  - CocoaChainKit (0.5.2)
+  - CocoaChainKit (0.5.3)
 
 DEPENDENCIES:
   - CocoaChainKit (from `../`)
@@ -9,7 +9,7 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  CocoaChainKit: 88d51eeb92e2ce0fad04779efe929e28e05cb7df
+  CocoaChainKit: 261dbb0ff2a5743c69a731caaa6397c1068da264
 
 PODFILE CHECKSUM: 12afcce9d65f9e256f5bcf0764b58231e749e1c1
 
