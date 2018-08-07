@@ -1,6 +1,6 @@
 # CocoaChainKit
 
-[![CI Status](https://img.shields.io/travis/G-Xi0N/CocoaChainKit.svg?style=flat)](https://travis-ci.org/G-Xi0N/CocoaChainKit)
+[![CI Status](https://img.shields.io/travis/Pircate/CocoaChainKit.svg?style=flat)](https://travis-ci.org/Pircate/CocoaChainKit)
 [![Version](https://img.shields.io/cocoapods/v/CocoaChainKit.svg?style=flat)](https://cocoapods.org/pods/CocoaChainKit)
 [![License](https://img.shields.io/cocoapods/l/CocoaChainKit.svg?style=flat)](https://cocoapods.org/pods/CocoaChainKit)
 [![Platform](https://img.shields.io/cocoapods/p/CocoaChainKit.svg?style=flat)](https://cocoapods.org/pods/CocoaChainKit)
