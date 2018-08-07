@@ -14,30 +14,6 @@ public extension Chain where Base: UITextField {
     }
     
     @discardableResult
-    func text(_ text: String?) -> Chain {
-        base.text = text
-        return self
-    }
-    
-    @discardableResult
-    func attributedText(_ attributedText: NSAttributedString?) -> Chain {
-        base.attributedText = attributedText
-        return self
-    }
-    
-    @discardableResult
-    func textColor(_ textColor: UIColor) -> Chain {
-        base.textColor = textColor
-        return self
-    }
-    
-    @discardableResult
-    func textAlignment(_ textAlignment: NSTextAlignment) -> Chain {
-        base.textAlignment = textAlignment
-        return self
-    }
-    
-    @discardableResult
     func placeholder(_ placeholder: String?) -> Chain {
         base.placeholder = placeholder
         return self

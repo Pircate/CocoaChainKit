@@ -14,30 +14,6 @@ public extension Chain where Base: UITextView {
     }
     
     @discardableResult
-    func text(_ text: String) -> Chain {
-        base.text = text
-        return self
-    }
-    
-    @discardableResult
-    func attributedText(_ attributedText: NSAttributedString) -> Chain {
-        base.attributedText = attributedText
-        return self
-    }
-    
-    @discardableResult
-    func textColor(_ textColor: UIColor) -> Chain {
-        base.textColor = textColor
-        return self
-    }
-    
-    @discardableResult
-    func textAlignment(_ textAlignment: NSTextAlignment) -> Chain {
-        base.textAlignment = textAlignment
-        return self
-    }
-    
-    @discardableResult
     func isEditable(_ isEditable: Bool) -> Chain {
         base.isEditable = isEditable
         return self
