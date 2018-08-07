@@ -6,6 +6,12 @@
 //
 
 public extension Chain where Base: UITableView {
+    
+    @discardableResult
+    func backgroundView(_ backgroundView: UIView?) -> Chain {
+        base.backgroundView = backgroundView
+        return self
+    }
 
     @discardableResult
     func dataSource(_ dataSource: UITableViewDataSource?) -> Chain {

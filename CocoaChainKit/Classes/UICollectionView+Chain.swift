@@ -8,6 +8,12 @@
 public extension Chain where Base: UICollectionView {
     
     @discardableResult
+    func backgroundView(_ backgroundView: UIView?) -> Chain {
+        base.backgroundView = backgroundView
+        return self
+    }
+    
+    @discardableResult
     func dataSource(_ dataSource: UICollectionViewDataSource?) -> Chain {
         base.dataSource = dataSource
         return self
