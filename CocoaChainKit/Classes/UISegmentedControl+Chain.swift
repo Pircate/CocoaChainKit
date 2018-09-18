@@ -59,7 +59,7 @@ public extension Chain where Base: UISegmentedControl {
     }
     
     @discardableResult
-    func titleTextAttributes(_ attributes: [AttributedStringKey : Any]?, for state: UIControl.State...) -> Chain {
+    func titleTextAttributes(_ attributes: [AttributedStringKey : Any]?, for state: ControlState...) -> Chain {
         state.forEach { base.setTitleTextAttributes(attributes, for: $0) }
         return self
     }

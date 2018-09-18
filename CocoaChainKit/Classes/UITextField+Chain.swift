@@ -32,8 +32,12 @@ public extension Chain where Base: UITextField {
     }
     
     @discardableResult
-    func defaultTextAttributes(_ defaultTextAttributes: [AttributedStringKey: Any]) -> Chain {
+    func defaultTextAttributes(_ defaultTextAttributes: [String: Any]) -> Chain {
+        #if swift(>=4.2)
+        base.defaultTextAttributes = convertToNSAttributedStringKeyDictionary(defaultTextAttributes)
+        #else
         base.defaultTextAttributes = defaultTextAttributes
+        #endif
         return self
     }
     
@@ -62,8 +66,12 @@ public extension Chain where Base: UITextField {
     }
     
     @discardableResult
-    func typingAttributes(_ typingAttributes: [AttributedStringKey: Any]?) -> Chain {
+    func typingAttributes(_ typingAttributes: [String: Any]?) -> Chain {
+        #if swift(>=4.2)
+        base.typingAttributes = convertToOptionalNSAttributedStringKeyDictionary(typingAttributes)
+        #else
         base.typingAttributes = typingAttributes
+        #endif
         return self
     }
     
@@ -122,4 +130,15 @@ public extension Chain where Base: UITextField {
         }
         return self
     }
+}
+
+// Helper function inserted by Swift 4.2 migrator.
+fileprivate func convertToNSAttributedStringKeyDictionary(_ input: [String: Any]) -> [AttributedStringKey: Any] {
+	return Dictionary(uniqueKeysWithValues: input.map { key, value in (AttributedStringKey(rawValue: key), value)})
+}
+
+// Helper function inserted by Swift 4.2 migrator.
+fileprivate func convertToOptionalNSAttributedStringKeyDictionary(_ input: [String: Any]?) -> [AttributedStringKey: Any]? {
+	guard let input = input else { return nil }
+	return Dictionary(uniqueKeysWithValues: input.map { key, value in (AttributedStringKey(rawValue: key), value)})
 }

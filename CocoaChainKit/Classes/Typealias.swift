@@ -29,10 +29,10 @@ public typealias ScrollViewContentInsetAdjustmentBehavior = UIScrollView.Content
 #else
 public typealias AttributedStringKey = NSAttributedStringKey
 public typealias ControlState = UIControlState
-public typealias ControlEvent = UIControlEvent
+public typealias ControlEvent = UIControlEvents
 public typealias ActivityIndicatorViewStyle = UIActivityIndicatorViewStyle
-public let CollectionViewElementKindSectionHeader = UICollectionViewElementKindSectionHeader
-public let CollectionViewElementKindSectionFooter = UICollectionViewElementKindSectionFooter
+public let CollectionViewElementKindSectionHeader = UICollectionElementKindSectionHeader
+public let CollectionViewElementKindSectionFooter = UICollectionElementKindSectionFooter
 public typealias CollectionViewScrollDirection = UICollectionViewScrollDirection
 public typealias DatePickerMode = UIDatePickerMode
 public typealias SwipeGestureRecognizerDirection = UISwipeGestureRecognizerDirection
