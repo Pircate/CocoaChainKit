@@ -1,6 +1,6 @@
 {
   "name": "CocoaChainKit",
-  "version": "0.6.2",
+  "version": "0.6.3",
   "summary": "一款链式调用框架.",
   "homepage": "https://github.com/Pircate/CocoaChainKit",
   "license": {
@@ -12,11 +12,12 @@
   },
   "source": {
     "git": "https://github.com/Pircate/CocoaChainKit.git",
-    "tag": "0.6.2"
+    "tag": "0.6.3"
   },
   "platforms": {
     "ios": "8.0"
   },
   "source_files": "CocoaChainKit/Classes/**/*",
-  "frameworks": "UIKit"
+  "frameworks": "UIKit",
+  "swift_version": "4.0"
 }
