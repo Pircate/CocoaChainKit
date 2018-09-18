@@ -51,7 +51,7 @@ public extension Chain where Base: UICollectionView {
     func register(_ viewClass: Swift.AnyClass?,
                   forSectionHeaderWithReuseIdentifier identifier: String) -> Chain {
         base.register(viewClass,
-                      forSupplementaryViewOfKind: UICollectionElementKindSectionHeader,
+                      forSupplementaryViewOfKind: CollectionViewElementKindSectionHeader,
                       withReuseIdentifier: identifier)
         return self
     }
@@ -60,7 +60,7 @@ public extension Chain where Base: UICollectionView {
     func register(_ viewClass: Swift.AnyClass?,
                   forSectionFooterWithReuseIdentifier identifier: String) -> Chain {
         base.register(viewClass,
-                      forSupplementaryViewOfKind: UICollectionElementKindSectionFooter,
+                      forSupplementaryViewOfKind: CollectionViewElementKindSectionFooter,
                       withReuseIdentifier: identifier)
         return self
     }
@@ -77,7 +77,7 @@ public extension Chain where Base: UICollectionView {
     func register(_ nib: UINib?,
                   forSectionHeaderWithReuseIdentifier identifier: String) -> Chain {
         base.register(nib,
-                      forSupplementaryViewOfKind: UICollectionElementKindSectionHeader,
+                      forSupplementaryViewOfKind: CollectionViewElementKindSectionHeader,
                       withReuseIdentifier: identifier)
         return self
     }
@@ -86,7 +86,7 @@ public extension Chain where Base: UICollectionView {
     func register(_ nib: UINib?,
                   forSectionFooterWithReuseIdentifier identifier: String) -> Chain {
         base.register(nib,
-                      forSupplementaryViewOfKind: UICollectionElementKindSectionFooter,
+                      forSupplementaryViewOfKind: CollectionViewElementKindSectionFooter,
                       withReuseIdentifier: identifier)
         return self
     }

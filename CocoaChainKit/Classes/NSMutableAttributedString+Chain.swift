@@ -8,19 +8,19 @@
 public extension Chain where Base: NSMutableAttributedString {
     
     @discardableResult
-    func addAttribute(_ name: NSAttributedStringKey, value: Any, range: NSRange) -> Chain {
+    func addAttribute(_ name: AttributedStringKey, value: Any, range: NSRange) -> Chain {
         base.addAttribute(name, value: value, range: range)
         return self
     }
     
     @discardableResult
-    func addAttributes(_ attrs: [NSAttributedStringKey : Any] = [:], range: NSRange) -> Chain {
+    func addAttributes(_ attrs: [AttributedStringKey : Any] = [:], range: NSRange) -> Chain {
         base.addAttributes(attrs, range: range)
         return self
     }
     
     @discardableResult
-    func removeAttribute(_ name: NSAttributedStringKey, range: NSRange) -> Chain {
+    func removeAttribute(_ name: AttributedStringKey, range: NSRange) -> Chain {
         base.removeAttribute(name, range: range)
         return self
     }

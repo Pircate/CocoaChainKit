@@ -50,7 +50,7 @@ public extension Chain where Base: UIView {
     }
     
     @discardableResult
-    func contentMode(_ contentMode: UIViewContentMode) -> Chain {
+    func contentMode(_ contentMode: ViewContentMode) -> Chain {
         base.contentMode = contentMode
         return self
     }

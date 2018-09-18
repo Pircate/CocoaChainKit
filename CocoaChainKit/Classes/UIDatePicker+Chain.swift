@@ -8,7 +8,7 @@
 public extension Chain where Base: UIDatePicker {
     
     @discardableResult
-    func datePickerMode(_ datePickerMode: UIDatePickerMode) -> Chain {
+    func datePickerMode(_ datePickerMode: DatePickerMode) -> Chain {
         base.datePickerMode = datePickerMode
         return self
     }

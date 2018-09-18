@@ -44,29 +44,29 @@ public extension Chain where Base: UISegmentedControl {
     }
     
     @discardableResult
-    func backgroundImage(_ backgroundImage: UIImage?, for state: UIControlState..., barMetrics: UIBarMetrics) -> Chain {
+    func backgroundImage(_ backgroundImage: UIImage?, for state: ControlState..., barMetrics: UIBarMetrics) -> Chain {
         state.forEach { base.setBackgroundImage(backgroundImage, for: $0, barMetrics: barMetrics) }
         return self
     }
     
     @discardableResult
     func dividerImage(_ dividerImage: UIImage?,
-                      forLeftSegmentState leftState: UIControlState,
-                      rightSegmentState rightState: UIControlState,
+                      forLeftSegmentState leftState: ControlState,
+                      rightSegmentState rightState: ControlState,
                       barMetrics: UIBarMetrics) -> Chain {
         base.setDividerImage(dividerImage, forLeftSegmentState: leftState, rightSegmentState: rightState, barMetrics: barMetrics)
         return self
     }
     
     @discardableResult
-    func titleTextAttributes(_ attributes: [NSAttributedStringKey : Any]?, for state: UIControlState...) -> Chain {
+    func titleTextAttributes(_ attributes: [AttributedStringKey : Any]?, for state: UIControl.State...) -> Chain {
         state.forEach { base.setTitleTextAttributes(attributes, for: $0) }
         return self
     }
     
     @discardableResult
     func contentPositionAdjustment(_ adjustment: UIOffset,
-                                   forSegmentType leftCenterRightOrAlone: UISegmentedControlSegment,
+                                   forSegmentType leftCenterRightOrAlone: SegmentedControlSegment,
                                    barMetrics: UIBarMetrics) -> Chain {
         base.setContentPositionAdjustment(adjustment, forSegmentType: leftCenterRightOrAlone, barMetrics: barMetrics)
         return self

@@ -8,31 +8,31 @@
 public extension Chain where Base: UIButton {
     
     @discardableResult
-    func title(_ title: String?, for state: UIControlState...) -> Chain {
+    func title(_ title: String?, for state: ControlState...) -> Chain {
         state.forEach { base.setTitle(title, for: $0) }
         return self
     }
     
     @discardableResult
-    func titleColor(_ color: UIColor?, for state: UIControlState...) -> Chain {
+    func titleColor(_ color: UIColor?, for state: ControlState...) -> Chain {
         state.forEach { base.setTitleColor(color, for: $0) }
         return self
     }
     
     @discardableResult
-    func image(_ image: UIImage?, for state: UIControlState...) -> Chain {
+    func image(_ image: UIImage?, for state: ControlState...) -> Chain {
         state.forEach { base.setImage(image, for: $0) }
         return self
     }
     
     @discardableResult
-    func backgroundImage(_ image: UIImage?, for state: UIControlState...) -> Chain {
+    func backgroundImage(_ image: UIImage?, for state: ControlState...) -> Chain {
         state.forEach { base.setBackgroundImage(image, for: $0) }
         return self
     }
     
     @discardableResult
-    func attributedTitle(_ attributedTitle: NSAttributedString?, for state: UIControlState...) -> Chain {
+    func attributedTitle(_ attributedTitle: NSAttributedString?, for state: ControlState...) -> Chain {
         state.forEach { base.setAttributedTitle(attributedTitle, for: $0) }
         return self
     }
