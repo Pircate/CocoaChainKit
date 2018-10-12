@@ -20,12 +20,12 @@ To run the example project, clone the repo, and run `pod install` from the Examp
 CocoaChainKit is available through [CocoaPods](https://cocoapods.org) or [Carthage](https://github.com/Carthage/Carthage). To install
 it, simply add the following line to your Podfile or Cartfile:
 
-### CocoaPods
+### Podfile
 ```ruby
 pod 'CocoaChainKit'
 ```
 
-### Carthage
+### Cartfile
 ```ruby
 github "Pircate/CocoaChainKit"
 ```
