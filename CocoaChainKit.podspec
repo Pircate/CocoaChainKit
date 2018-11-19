@@ -1,7 +1,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'CocoaChainKit'
-  s.version          = '0.6.3'
+  s.version          = '0.7.0'
   s.summary          = '一款链式调用框架.'
   s.homepage         = 'https://github.com/Pircate/CocoaChainKit'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
