@@ -4,7 +4,7 @@
 [![Version](https://img.shields.io/cocoapods/v/CocoaChainKit.svg?style=flat)](https://cocoapods.org/pods/CocoaChainKit)
 [![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)
 [![License](https://img.shields.io/cocoapods/l/CocoaChainKit.svg?style=flat)](https://cocoapods.org/pods/CocoaChainKit)
-![iOS 8.0+](https://img.shields.io/badge/iOS-8.0%2B-blue.svg)
+![iOS 9.0+](https://img.shields.io/badge/iOS-9.0%2B-blue.svg)
 
 ## Example
 
@@ -12,8 +12,8 @@ To run the example project, clone the repo, and run `pod install` from the Examp
 
 ## Requirements
 
-* iOS 8.0+
-* Swift 4
+* iOS 9.0
+* Swift 4.2
 
 ## Installation
 
