@@ -14,7 +14,7 @@ public extension Chain where Base: UIProgressView {
     }
     
     @discardableResult
-    func progressViewStyle(_ progressViewStyle: ProgressViewStyle) -> Chain {
+    func progressViewStyle(_ progressViewStyle: UIProgressView.Style) -> Chain {
         base.progressViewStyle = progressViewStyle
         return self
     }

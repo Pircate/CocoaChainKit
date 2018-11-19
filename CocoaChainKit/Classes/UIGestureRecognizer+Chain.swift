@@ -65,7 +65,7 @@ public extension Chain where Base: UISwipeGestureRecognizer {
     }
     
     @discardableResult
-    func direction(_ direction: SwipeGestureRecognizerDirection) -> Chain {
+    func direction(_ direction: UISwipeGestureRecognizer.Direction) -> Chain {
         base.direction = direction
         return self
     }

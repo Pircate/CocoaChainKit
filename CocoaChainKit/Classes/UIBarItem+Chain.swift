@@ -14,8 +14,8 @@ public extension Chain where Base: UIBarItem {
     }
     
     @discardableResult
-    func titleTextAttributes(_ titleTextAttributes: [AttributedStringKey: Any]?,
-                             for state: ControlState...) -> Chain {
+    func titleTextAttributes(_ titleTextAttributes: [NSAttributedString.Key: Any]?,
+                             for state: UIControl.State...) -> Chain {
         state.forEach { base.setTitleTextAttributes(titleTextAttributes, for: $0) }
         return self
     }

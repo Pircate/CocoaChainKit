@@ -26,7 +26,7 @@ public extension Chain where Base: UITextField {
     }
     
     @discardableResult
-    func borderStyle(_ borderStyle: TextFieldBorderStyle) -> Chain {
+    func borderStyle(_ borderStyle: UITextField.BorderStyle) -> Chain {
         base.borderStyle = borderStyle
         return self
     }
@@ -76,7 +76,7 @@ public extension Chain where Base: UITextField {
     }
     
     @discardableResult
-    func clearButtonMode(_ clearButtonMode: TextFieldViewMode) -> Chain {
+    func clearButtonMode(_ clearButtonMode: UITextField.ViewMode) -> Chain {
         base.clearButtonMode = clearButtonMode
         return self
     }
@@ -88,7 +88,7 @@ public extension Chain where Base: UITextField {
     }
     
     @discardableResult
-    func leftViewMode(_ leftViewMode: TextFieldViewMode) -> Chain {
+    func leftViewMode(_ leftViewMode: UITextField.ViewMode) -> Chain {
         base.leftViewMode = leftViewMode
         return self
     }
@@ -100,7 +100,7 @@ public extension Chain where Base: UITextField {
     }
     
     @discardableResult
-    func rightViewMode(_ rightViewMode: TextFieldViewMode) -> Chain {
+    func rightViewMode(_ rightViewMode: UITextField.ViewMode) -> Chain {
         base.rightViewMode = rightViewMode
         return self
     }
@@ -133,12 +133,17 @@ public extension Chain where Base: UITextField {
 }
 
 // Helper function inserted by Swift 4.2 migrator.
-fileprivate func convertToNSAttributedStringKeyDictionary(_ input: [String: Any]) -> [AttributedStringKey: Any] {
-	return Dictionary(uniqueKeysWithValues: input.map { key, value in (AttributedStringKey(rawValue: key), value)})
+fileprivate func convertToNSAttributedStringKeyDictionary(_ input: [String: Any])
+    -> [NSAttributedString.Key: Any] {
+	return Dictionary(uniqueKeysWithValues: input.map { key, value in
+        (NSAttributedString.Key(rawValue: key), value)
+    })
 }
 
 // Helper function inserted by Swift 4.2 migrator.
-fileprivate func convertToOptionalNSAttributedStringKeyDictionary(_ input: [String: Any]?) -> [AttributedStringKey: Any]? {
+fileprivate func convertToOptionalNSAttributedStringKeyDictionary(_ input: [String: Any]?) -> [NSAttributedString.Key: Any]? {
 	guard let input = input else { return nil }
-	return Dictionary(uniqueKeysWithValues: input.map { key, value in (AttributedStringKey(rawValue: key), value)})
+	return Dictionary(uniqueKeysWithValues: input.map { key, value in
+        (NSAttributedString.Key(rawValue: key), value)
+    })
 }

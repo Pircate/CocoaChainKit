@@ -9,8 +9,8 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  CocoaChainKit: e91056749c7adc5ca411962261e0cabdee98d185
+  CocoaChainKit: d82a4dbb94fbd8b9752d5d3c7e57bb85e7c54159
 
 PODFILE CHECKSUM: 12afcce9d65f9e256f5bcf0764b58231e749e1c1
 
-COCOAPODS: 1.6.0.beta.1
+COCOAPODS: 1.6.0.beta.2

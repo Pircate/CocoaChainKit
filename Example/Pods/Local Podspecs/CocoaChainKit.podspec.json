@@ -15,9 +15,9 @@
     "tag": "0.6.3"
   },
   "platforms": {
-    "ios": "8.0"
+    "ios": "9.0"
   },
+  "swift_version": "4.2",
   "source_files": "CocoaChainKit/Classes/**/*",
-  "frameworks": "UIKit",
-  "swift_version": "4.0"
+  "frameworks": "UIKit"
 }
